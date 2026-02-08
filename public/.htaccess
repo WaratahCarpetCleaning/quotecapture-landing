@@ -7,11 +7,11 @@
 </IfModule>
 
 <IfModule mod_headers.c>
-  Header set X-Powered-By "QuoteCapture"
+  Header set X-Powered-By "Central Coast Carpet Cleaning"
 
   # Cache everything on CDN by default
   Header set Cache-Control "public, s-maxage=604800, max-age=0"
-  
+
   # Cache in browser all assets
   <If "%{REQUEST_URI} =~ m#^/assets/.*$#">
     Header set Cache-Control "public, max-age=604800"

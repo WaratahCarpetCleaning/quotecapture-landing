@@ -120,18 +120,16 @@ function PricingPage() {
                   </ul>
                 </div>
                 <div className="mt-8">
-                  <a href="https://servicebot-saas-mvp.vercel.app" target="_blank" rel="noopener noreferrer">
-                    <Button
-                      className={`w-full ${
-                        tier.popular
-                          ? 'bg-[#2563eb] hover:bg-[#1d4ed8] text-white shadow-sm'
-                          : 'bg-white text-[#111827] ring-1 ring-inset ring-gray-300 hover:bg-gray-50'
-                      }`}
-                      size="lg"
-                    >
-                      {tier.cta}
-                    </Button>
-                  </a>
+                  <Button asChild
+                    className={`w-full ${
+                      tier.popular
+                        ? 'bg-[#2563eb] hover:bg-[#1d4ed8] text-white shadow-sm'
+                        : 'bg-white text-[#111827] ring-1 ring-inset ring-gray-300 hover:bg-gray-50'
+                    }`}
+                    size="lg"
+                  >
+                    <a href="https://servicebot-saas-mvp.vercel.app" target="_blank" rel="noopener noreferrer">{tier.cta}</a>
+                  </Button>
                 </div>
               </div>
             ))}

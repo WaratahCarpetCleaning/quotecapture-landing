@@ -66,13 +66,11 @@ function Header() {
             >
               Contact
             </Link>
-            <a href="https://servicebot-saas-mvp.vercel.app" target="_blank" rel="noopener noreferrer">
-              <Button
-                className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-6 py-2 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md"
-              >
-                Start Free
-              </Button>
-            </a>
+            <Button asChild
+              className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-6 py-2 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md"
+            >
+              <a href="https://servicebot-saas-mvp.vercel.app" target="_blank" rel="noopener noreferrer">Start Free</a>
+            </Button>
           </div>
 
           {/* Mobile Hamburger Button */}
@@ -123,14 +121,11 @@ function Header() {
                   Contact
                 </Link>
                 <div className="pt-4">
-                  <a href="https://servicebot-saas-mvp.vercel.app" target="_blank" rel="noopener noreferrer">
-                    <Button
-                      className="w-full bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold py-6 text-lg rounded-lg shadow-sm"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      Start Free
-                    </Button>
-                  </a>
+                  <Button asChild
+                    className="w-full bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold py-6 text-lg rounded-lg shadow-sm"
+                  >
+                    <a href="https://servicebot-saas-mvp.vercel.app" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)}>Start Free</a>
+                  </Button>
                 </div>
               </div>
             </div>

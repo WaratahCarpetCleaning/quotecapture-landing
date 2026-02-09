@@ -31,7 +31,6 @@ function Footer() {
             <ul className="space-y-2">
               {[
                 { label: 'How It Works', href: '#how-it-works' },
-                { label: 'Demo', href: '#demo' },
                 { label: 'Features', href: '#features' },
                 { label: 'Pricing', href: '#pricing' },
                 { label: 'FAQ', href: '#faq' },

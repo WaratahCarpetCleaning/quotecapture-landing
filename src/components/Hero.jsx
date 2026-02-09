@@ -4,12 +4,6 @@ import { MessageCircle, MapPin } from 'lucide-react';
 import TrustBar from '@/components/TrustBar';
 
 function Hero() {
-  const handleDemoClick = (e) => {
-    e.preventDefault();
-    const el = document.querySelector('#demo');
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
-  };
-
   return (
     <section className="relative min-h-screen flex flex-col justify-center bg-gradient-to-b from-blue-50 via-white to-white overflow-hidden pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-24 w-full">
@@ -31,13 +25,6 @@ function Hero() {
                 className="w-full sm:w-auto bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 <a href="https://servicebot-saas-mvp.vercel.app" target="_blank" rel="noopener noreferrer">Start Free</a>
-              </Button>
-              <Button
-                variant="outline"
-                onClick={handleDemoClick}
-                className="w-full sm:w-auto border-2 border-[#111827] text-[#111827] hover:bg-[#111827] hover:text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-200"
-              >
-                See Demo
               </Button>
             </div>
           </div>

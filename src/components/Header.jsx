@@ -4,7 +4,6 @@ import { Menu, X, Zap } from 'lucide-react';
 
 const NAV_LINKS = [
   { label: 'How It Works', href: '#how-it-works' },
-  { label: 'Demo', href: '#demo' },
   { label: 'Features', href: '#features' },
   { label: 'Pricing', href: '#pricing' },
   { label: 'FAQ', href: '#faq' },

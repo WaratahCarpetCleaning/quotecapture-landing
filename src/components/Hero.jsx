@@ -1,16 +1,21 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { MessageCircle, MapPin } from 'lucide-react';
 import TrustBar from '@/components/TrustBar';
 
 function Hero() {
+  const handleDemoClick = (e) => {
+    e.preventDefault();
+    const el = document.querySelector('#demo');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <section className="relative min-h-screen flex flex-col justify-center bg-gradient-to-b from-blue-50 via-white to-white overflow-hidden">
+    <section className="relative min-h-screen flex flex-col justify-center bg-gradient-to-b from-blue-50 via-white to-white overflow-hidden pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 lg:py-24 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left side - Content */}
-          <div className="space-y-6 sm:space-y-8 text-center lg:text-left order-1 lg:order-1">
+          <div className="space-y-6 sm:space-y-8 text-center lg:text-left">
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-[32px] leading-tight sm:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight">
                 Turn Website Visitors Into Booked Jobs
@@ -27,17 +32,18 @@ function Hero() {
               >
                 <a href="https://servicebot-saas-mvp.vercel.app" target="_blank" rel="noopener noreferrer">Start Free</a>
               </Button>
-              <Button asChild
+              <Button
                 variant="outline"
+                onClick={handleDemoClick}
                 className="w-full sm:w-auto border-2 border-[#111827] text-[#111827] hover:bg-[#111827] hover:text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-200"
               >
-                <a href="https://servicebot-saas-mvp.vercel.app" target="_blank" rel="noopener noreferrer">See It In Action</a>
+                See Demo
               </Button>
             </div>
           </div>
 
           {/* Right side - Widget Mockup */}
-          <div className="relative flex justify-center lg:justify-end order-2 lg:order-2 mt-8 lg:mt-0">
+          <div className="relative flex justify-center lg:justify-end mt-8 lg:mt-0">
             <div className="relative w-full max-w-[320px] sm:max-w-md lg:max-w-full flex justify-center lg:block">
               {/* Chat Bubble Button */}
               <div className="absolute -bottom-4 -right-4 lg:bottom-0 lg:right-0 bg-[#2563eb] rounded-full p-3 sm:p-4 shadow-2xl cursor-pointer hover:scale-110 transition-transform duration-200 z-10">
@@ -79,10 +85,11 @@ function Hero() {
                       <p className="text-gray-800 text-sm mb-2 sm:mb-3">Enter your postcode:</p>
                       <div className="relative">
                         <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
-                        <input 
-                          type="text" 
+                        <input
+                          type="text"
                           placeholder="e.g., 2000"
-                          className="w-full pl-9 sm:pl-10 pr-4 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#2563eb] focus:border-transparent text-gray-900"
+                          readOnly
+                          className="w-full pl-9 sm:pl-10 pr-4 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none text-gray-900"
                         />
                       </div>
                     </div>

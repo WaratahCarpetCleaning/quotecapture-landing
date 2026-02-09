@@ -1,38 +1,37 @@
-
 import React from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import ScrollToTop from '@/components/ScrollToTop';
-import MainLayout from '@/layouts/MainLayout';
-import HomePage from '@/pages/HomePage';
-import ServicesPage from '@/pages/ServicesPage';
-import AboutPage from '@/pages/AboutPage';
-import ContactPage from '@/pages/ContactPage';
-import GalleryPage from '@/pages/GalleryPage';
-import QuoteCapturePage from '@/pages/QuoteCapturePage';
-import NotFoundPage from '@/pages/NotFoundPage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import LandingPage from '@/pages/LandingPage';
+
+function NotFound() {
+  return (
+    <div className="min-h-[60vh] flex flex-col items-center justify-center px-4 pt-20">
+      <h1 className="text-6xl font-bold text-gray-900 mb-4">404</h1>
+      <p className="text-lg text-gray-600 mb-8">Page not found.</p>
+      <a
+        href="/"
+        className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+      >
+        Back to Home
+      </a>
+    </div>
+  );
+}
 
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<MainLayout />}>
-          <Route index element={<HomePage />} />
-          <Route path="services" element={<ServicesPage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="contact" element={<ContactPage />} />
-          <Route path="gallery" element={<GalleryPage />} />
-          <Route path="tools/quotecapture" element={<QuoteCapturePage />} />
-
-          {/* Redirect old routes to QuoteCapture */}
-          <Route path="pricing" element={<Navigate to="/tools/quotecapture" replace />} />
-          <Route path="features" element={<Navigate to="/tools/quotecapture" replace />} />
-          <Route path="docs" element={<Navigate to="/tools/quotecapture" replace />} />
-
-          {/* 404 */}
-          <Route path="*" element={<NotFoundPage />} />
-        </Route>
-      </Routes>
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }

@@ -22,4 +22,5 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
+# TODO: Update to https://sparkquote.ai/sitemap.xml once new domain is deployed
 Sitemap: https://quotecapture-landing.vercel.app/sitemap.xml

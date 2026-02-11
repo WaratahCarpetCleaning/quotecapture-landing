@@ -3,12 +3,12 @@ import { ChevronDown } from 'lucide-react';
 
 const FAQS = [
   {
-    question: 'How does QuoteCapture work?',
-    answer: 'QuoteCapture is a chat-style widget that sits on your website. When a visitor clicks it, they enter their postcode, select services, choose a preferred date, and get an instant quote. Their contact details are captured and sent to you via email and your dashboard.',
+    question: 'How does SparkQuote work?',
+    answer: 'SparkQuote is a chat-style widget that sits on your website. When a visitor clicks it, they enter their postcode, select services, choose a preferred date, and get an instant quote. Their contact details are captured and sent to you via email and your dashboard.',
   },
   {
     question: 'What industries is this for?',
-    answer: 'QuoteCapture works for any service business that provides quotes — carpet cleaners, plumbers, electricians, landscapers, painters, removalists, pool cleaners, pest control, and more. If you offer services with configurable pricing, QuoteCapture is built for you.',
+    answer: 'SparkQuote works for any service business that provides quotes — carpet cleaners, plumbers, electricians, landscapers, painters, removalists, pool cleaners, pest control, and more. If you offer services with configurable pricing, SparkQuote is built for you.',
   },
   {
     question: 'How do I embed the widget on my website?',
@@ -47,7 +47,7 @@ function FAQ() {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-gray-600">
-            Everything you need to know about QuoteCapture.
+            Everything you need to know about SparkQuote.
           </p>
         </div>
 

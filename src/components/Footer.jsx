@@ -18,7 +18,7 @@ function Footer() {
               <div className="w-8 h-8 bg-[#2563eb] rounded-lg flex items-center justify-center">
                 <Zap className="w-5 h-5 text-white" />
               </div>
-              <span className="text-lg font-bold text-white">QuoteCapture</span>
+              <span className="text-lg font-bold text-white">SparkQuote</span>
             </a>
             <p className="text-sm leading-relaxed">
               The instant quote widget for service businesses. Capture leads and grow your revenue 24/7.
@@ -78,7 +78,7 @@ function Footer() {
 
         <div className="border-t border-gray-800 pt-8 text-center">
           <p className="text-sm">
-            &copy; {new Date().getFullYear()} QuoteCapture. All rights reserved.
+            &copy; {new Date().getFullYear()} SparkQuote. All rights reserved.
           </p>
         </div>
       </div>

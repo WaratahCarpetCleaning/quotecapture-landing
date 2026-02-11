@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <!-- TODO: Update to https://sparkquote.ai/ once new domain is deployed -->
     <loc>https://quotecapture-landing.vercel.app/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>

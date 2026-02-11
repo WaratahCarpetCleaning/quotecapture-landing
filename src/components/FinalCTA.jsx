@@ -9,7 +9,7 @@ function FinalCTA() {
           Ready to Turn Visitors Into Customers?
         </h2>
         <p className="text-lg sm:text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-          Join 200+ service businesses using QuoteCapture to capture leads and grow their revenue. Start free — no credit card required.
+          Join 200+ service businesses using SparkQuote to capture leads and grow their revenue. Start free — no credit card required.
         </p>
         <Button asChild
           className="bg-white text-[#2563eb] hover:bg-blue-50 font-semibold px-10 py-6 text-lg rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200"

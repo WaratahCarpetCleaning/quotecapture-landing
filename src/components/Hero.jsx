@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
 import { MessageCircle, MapPin } from 'lucide-react';
+import EmailCaptureForm from '@/components/EmailCaptureForm';
 import TrustBar from '@/components/TrustBar';
 
 function Hero() {
@@ -19,14 +19,8 @@ function Hero() {
               </p>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button asChild
-                className="w-full sm:w-auto bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-semibold px-8 py-6 text-lg rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
-              >
-                <a href="https://servicebot-saas-mvp.vercel.app" target="_blank" rel="noopener noreferrer">Start Free</a>
-              </Button>
-            </div>
+            {/* Email Capture */}
+            <EmailCaptureForm source="hero" variant="light" />
           </div>
 
           {/* Right side - Widget Mockup */}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
+import EmailCaptureForm from '@/components/EmailCaptureForm';
 
 function FinalCTA() {
   return (
@@ -11,13 +11,9 @@ function FinalCTA() {
         <p className="text-lg sm:text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
           Join 200+ service businesses using SparkQuote to capture leads and grow their revenue. Start free — no credit card required.
         </p>
-        <Button asChild
-          className="bg-white text-[#2563eb] hover:bg-blue-50 font-semibold px-10 py-6 text-lg rounded-lg shadow-xl hover:shadow-2xl transition-all duration-200"
-        >
-          <a href="https://servicebot-saas-mvp.vercel.app" target="_blank" rel="noopener noreferrer">
-            Start Free Today
-          </a>
-        </Button>
+        <div className="flex justify-center">
+          <EmailCaptureForm source="cta" variant="dark" />
+        </div>
       </div>
     </section>
   );

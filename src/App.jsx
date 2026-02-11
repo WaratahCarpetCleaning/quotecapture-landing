@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ExitPopup from '@/components/ExitPopup';
 import LandingPage from '@/pages/LandingPage';
 
 function NotFound() {
@@ -31,6 +32,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <ExitPopup />
       </div>
     </BrowserRouter>
   );

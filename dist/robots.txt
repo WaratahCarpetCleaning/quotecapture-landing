@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# TODO: Update to https://sparkquote.ai/sitemap.xml once new domain is deployed
+Sitemap: https://quotecapture-landing.vercel.app/sitemap.xml

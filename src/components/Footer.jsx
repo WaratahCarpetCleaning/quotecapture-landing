@@ -54,7 +54,7 @@ function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://servicebot-saas-mvp.vercel.app"
+                  href="https://app.getsparkquote.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm hover:text-white transition-colors"
@@ -64,7 +64,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="https://servicebot-saas-mvp.vercel.app"
+                  href="https://app.getsparkquote.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm hover:text-white transition-colors"

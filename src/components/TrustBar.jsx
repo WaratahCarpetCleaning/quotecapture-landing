@@ -3,7 +3,7 @@ import React from 'react';
 
 function TrustBar() {
   return (
-    <div className="mt-12 sm:mt-20 w-full">
+    <div className="mt-8 sm:mt-10 w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col items-center justify-center text-center space-y-4">
           <p className="text-gray-500 font-medium text-xs sm:text-sm md:text-lg">

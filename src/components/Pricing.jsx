@@ -38,7 +38,7 @@ const PLANS = [
 
 function Pricing() {
   return (
-    <section id="pricing" className="py-20 sm:py-28 bg-gray-50">
+    <section id="pricing" className="py-20 sm:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -93,7 +93,7 @@ function Pricing() {
                     : 'bg-[#2563eb] text-white hover:bg-[#1d4ed8]'
                 }`}
               >
-                <a href="https://servicebot-saas-mvp.vercel.app" target="_blank" rel="noopener noreferrer">
+                <a href="https://app.getsparkquote.com" target="_blank" rel="noopener noreferrer">
                   {plan.cta}
                 </a>
               </Button>
